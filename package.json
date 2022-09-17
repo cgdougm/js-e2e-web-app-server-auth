@@ -1,6 +1,6 @@
 {
-  "name": "express-msal-auth",
-  "version": "1.0.1",
+  "name": "msal-express",
+  "version": "0.0.1",
   "description": "A Node.js & Express web app calling Microsoft Graph API using MSAL Node",
   "main": "src/app.js",
   "scripts": {
@@ -17,14 +17,21 @@
     "ejs": "^3.0.1",
     "express": "^4.17.1",
     "express-session": "^1.17.1",
+    "jquery": "1.9.1 - 3",
     "jsonwebtoken": "^8.5.1",
     "jwks-rsa": "^1.12.3",
+    "path": "^0.12.7",
+    "popper.js": "^1.16.1",
     "uuid": "^8.3.1"
   },
   "devDependencies": {
+    "dotenv": "^16.0.2",
     "nodemon": "^2.0.7"
   },
   "nodemonConfig": {
-    "ignore": ["src/data/cache.json", "README.md"]
+    "ignore": [
+      "src/data/cache.json",
+      "README.md"
+    ]
   }
 }

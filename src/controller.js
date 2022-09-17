@@ -1,4 +1,5 @@
 const fetchManager = require('./utils/fetchManager');
+const path = require("path");
 
 const isConfigured = (req) => {
     
@@ -53,4 +54,11 @@ exports.getTenantPage = async(req, res, next) => {
     }
 
     res.render('tenant', { isAuthenticated: req.session.isAuthenticated, tenant: tenant.value[0], configured: isConfigured(req) });
+}
+
+exports.getTestPage = async(req, res, next) => {
+    console.log(`Test page request: ${req.url}`);
+    res.sendFile(path.resolve("./index.html"));
+    // or simply 
+    // res.send("getTestRoute")
 }

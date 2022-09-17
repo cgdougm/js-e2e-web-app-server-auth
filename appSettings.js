@@ -46,6 +46,10 @@ const appSettings = () => {
                 "callingPageRoute": "/tenant",
                 "endpoint": "https://management.azure.com/tenants?api-version=2020-01-01",
                 "scopes": ["https://management.azure.com/user_impersonation"]
+            },
+            "testing": {
+                "callingPageRoute": "/test",
+                "scopes": ["user.read"]
             }
         }
 
